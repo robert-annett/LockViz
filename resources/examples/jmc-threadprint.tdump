@@ -1,0 +1,247 @@
+2015-02-13 15:50:32
+Full thread dump Java HotSpot(TM) 64-Bit Server VM (25.25-b02 mixed mode):
+
+"RMI TCP Connection(idle)" #22 daemon prio=5 os_prio=0 tid=0x000000001d8a7800 nid=0x48c0 waiting on condition [0x000000001f1af000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x0000000783620818> (a java.util.concurrent.SynchronousQueue$TransferStack)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+	at java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:362)
+	at java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:941)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1066)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+"JMX server connection timeout 20" #20 daemon prio=5 os_prio=0 tid=0x000000001d81e800 nid=0x5a5c in Object.wait() [0x000000001e43f000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000007836006b8> (a [I)
+	at com.sun.jmx.remote.internal.ServerCommunicatorAdmin$Timeout.run(ServerCommunicatorAdmin.java:168)
+	- locked <0x00000007836006b8> (a [I)
+	at java.lang.Thread.run(Thread.java:745)
+
+"RMI Scheduler(0)" #19 daemon prio=5 os_prio=0 tid=0x000000001d819000 nid=0x2a4c waiting on condition [0x000000001cccf000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x0000000783608790> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1067)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1127)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+"RMI TCP Accept-0" #17 daemon prio=5 os_prio=0 tid=0x000000001b2fd800 nid=0x12ec runnable [0x000000001e20f000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.DualStackPlainSocketImpl.accept0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketAccept(DualStackPlainSocketImpl.java:131)
+	at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:404)
+	at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:199)
+	- locked <0x00000007836282a8> (a java.net.SocksSocketImpl)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:545)
+	at java.net.ServerSocket.accept(ServerSocket.java:513)
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:52)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:389)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:361)
+	at java.lang.Thread.run(Thread.java:745)
+
+"DestroyJavaVM" #15 prio=5 os_prio=0 tid=0x000000000205f000 nid=0x50f8 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Ge Hong" #14 prio=5 os_prio=0 tid=0x000000001b078000 nid=0x3d8c waiting on condition [0x000000001d1cf000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007836302f0> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(AbstractQueuedSynchronizer.java:836)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireQueued(AbstractQueuedSynchronizer.java:870)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquire(AbstractQueuedSynchronizer.java:1199)
+	at java.util.concurrent.locks.ReentrantLock$NonfairSync.lock(ReentrantLock.java:209)
+	at java.util.concurrent.locks.ReentrantLock.lock(ReentrantLock.java:285)
+	at lockvis.tools.DiningPhilosophers$Philosopher.eat(DiningPhilosophers.java:52)
+	at lockvis.tools.DiningPhilosophers$Philosopher.eat(DiningPhilosophers.java:43)
+	at lockvis.tools.DiningPhilosophers$Philosopher.run(DiningPhilosophers.java:70)
+	at java.lang.Thread.run(Thread.java:745)
+
+"Zhang Daoling" #13 prio=5 os_prio=0 tid=0x000000001b077000 nid=0x2c9c waiting on condition [0x000000001d2ef000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x0000000783630508> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(AbstractQueuedSynchronizer.java:836)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireQueued(AbstractQueuedSynchronizer.java:870)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquire(AbstractQueuedSynchronizer.java:1199)
+	at java.util.concurrent.locks.ReentrantLock$NonfairSync.lock(ReentrantLock.java:209)
+	at java.util.concurrent.locks.ReentrantLock.lock(ReentrantLock.java:285)
+	at lockvis.tools.DiningPhilosophers$Philosopher.eat(DiningPhilosophers.java:52)
+	at lockvis.tools.DiningPhilosophers$Philosopher.eat(DiningPhilosophers.java:43)
+	at lockvis.tools.DiningPhilosophers$Philosopher.run(DiningPhilosophers.java:70)
+	at java.lang.Thread.run(Thread.java:745)
+
+"Popper" #12 prio=5 os_prio=0 tid=0x000000001b076800 nid=0x3f50 waiting on condition [0x000000001d07f000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x0000000783630710> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(AbstractQueuedSynchronizer.java:836)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireQueued(AbstractQueuedSynchronizer.java:870)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquire(AbstractQueuedSynchronizer.java:1199)
+	at java.util.concurrent.locks.ReentrantLock$NonfairSync.lock(ReentrantLock.java:209)
+	at java.util.concurrent.locks.ReentrantLock.lock(ReentrantLock.java:285)
+	at lockvis.tools.DiningPhilosophers$Philosopher.eat(DiningPhilosophers.java:52)
+	at lockvis.tools.DiningPhilosophers$Philosopher.eat(DiningPhilosophers.java:43)
+	at lockvis.tools.DiningPhilosophers$Philosopher.run(DiningPhilosophers.java:70)
+	at java.lang.Thread.run(Thread.java:745)
+
+"Descartes" #11 prio=5 os_prio=0 tid=0x000000001b074800 nid=0x5384 waiting on condition [0x000000001cf4e000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x0000000783630918> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(AbstractQueuedSynchronizer.java:836)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireQueued(AbstractQueuedSynchronizer.java:870)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquire(AbstractQueuedSynchronizer.java:1199)
+	at java.util.concurrent.locks.ReentrantLock$NonfairSync.lock(ReentrantLock.java:209)
+	at java.util.concurrent.locks.ReentrantLock.lock(ReentrantLock.java:285)
+	at lockvis.tools.DiningPhilosophers$Philosopher.eat(DiningPhilosophers.java:52)
+	at lockvis.tools.DiningPhilosophers$Philosopher.eat(DiningPhilosophers.java:43)
+	at lockvis.tools.DiningPhilosophers$Philosopher.run(DiningPhilosophers.java:70)
+	at java.lang.Thread.run(Thread.java:745)
+
+"Service Thread" #10 daemon prio=9 os_prio=0 tid=0x000000001b054000 nid=0x3ad4 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"C1 CompilerThread3" #9 daemon prio=9 os_prio=2 tid=0x000000001aff5800 nid=0x1c28 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"C2 CompilerThread2" #8 daemon prio=9 os_prio=2 tid=0x000000001afd4800 nid=0x5784 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"C2 CompilerThread1" #7 daemon prio=9 os_prio=2 tid=0x000000001afc1000 nid=0x5e28 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"C2 CompilerThread0" #6 daemon prio=9 os_prio=2 tid=0x000000001afb7800 nid=0x4db4 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Attach Listener" #5 daemon prio=5 os_prio=2 tid=0x000000001afb5000 nid=0x5350 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Signal Dispatcher" #4 daemon prio=9 os_prio=2 tid=0x000000001afb4000 nid=0x2248 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Finalizer" #3 daemon prio=8 os_prio=1 tid=0x0000000019efc800 nid=0x4d10 in Object.wait() [0x000000001c37f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x0000000783628b58> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:142)
+	- locked <0x0000000783628b58> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:158)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:209)
+
+"Reference Handler" #2 daemon prio=10 os_prio=2 tid=0x0000000019ef4000 nid=0x13fc in Object.wait() [0x000000001c25e000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x0000000783628d10> (a java.lang.ref.Reference$Lock)
+	at java.lang.Object.wait(Object.java:502)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:157)
+	- locked <0x0000000783628d10> (a java.lang.ref.Reference$Lock)
+
+"VM Thread" os_prio=2 tid=0x000000001af61800 nid=0x5f34 runnable 
+
+"GC task thread#0 (ParallelGC)" os_prio=0 tid=0x00000000020dd800 nid=0x1ae4 runnable 
+
+"GC task thread#1 (ParallelGC)" os_prio=0 tid=0x00000000020df000 nid=0x569c runnable 
+
+"GC task thread#2 (ParallelGC)" os_prio=0 tid=0x00000000020e0800 nid=0x1348 runnable 
+
+"GC task thread#3 (ParallelGC)" os_prio=0 tid=0x00000000020e2000 nid=0x5a94 runnable 
+
+"GC task thread#4 (ParallelGC)" os_prio=0 tid=0x00000000020e5800 nid=0x5aac runnable 
+
+"GC task thread#5 (ParallelGC)" os_prio=0 tid=0x00000000020e6800 nid=0x840 runnable 
+
+"GC task thread#6 (ParallelGC)" os_prio=0 tid=0x00000000020e7800 nid=0x50b8 runnable 
+
+"GC task thread#7 (ParallelGC)" os_prio=0 tid=0x00000000020e9000 nid=0x14c8 runnable 
+
+"VM Periodic Task Thread" os_prio=2 tid=0x000000001b069800 nid=0x274c waiting on condition 
+
+JNI global references: 56
+
+
+Found one Java-level deadlock:
+=============================
+"Ge Hong":
+  waiting for ownable synchronizer 0x00000007836302f0, (a java.util.concurrent.locks.ReentrantLock$NonfairSync),
+  which is held by "Zhang Daoling"
+"Zhang Daoling":
+  waiting for ownable synchronizer 0x0000000783630508, (a java.util.concurrent.locks.ReentrantLock$NonfairSync),
+  which is held by "Popper"
+"Popper":
+  waiting for ownable synchronizer 0x0000000783630710, (a java.util.concurrent.locks.ReentrantLock$NonfairSync),
+  which is held by "Descartes"
+"Descartes":
+  waiting for ownable synchronizer 0x0000000783630918, (a java.util.concurrent.locks.ReentrantLock$NonfairSync),
+  which is held by "Ge Hong"
+
+Java stack information for the threads listed above:
+===================================================
+"Ge Hong":
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x00000007836302f0> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(AbstractQueuedSynchronizer.java:836)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireQueued(AbstractQueuedSynchronizer.java:870)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquire(AbstractQueuedSynchronizer.java:1199)
+	at java.util.concurrent.locks.ReentrantLock$NonfairSync.lock(ReentrantLock.java:209)
+	at java.util.concurrent.locks.ReentrantLock.lock(ReentrantLock.java:285)
+	at lockvis.tools.DiningPhilosophers$Philosopher.eat(DiningPhilosophers.java:52)
+	at lockvis.tools.DiningPhilosophers$Philosopher.eat(DiningPhilosophers.java:43)
+	at lockvis.tools.DiningPhilosophers$Philosopher.run(DiningPhilosophers.java:70)
+	at java.lang.Thread.run(Thread.java:745)
+"Zhang Daoling":
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x0000000783630508> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(AbstractQueuedSynchronizer.java:836)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireQueued(AbstractQueuedSynchronizer.java:870)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquire(AbstractQueuedSynchronizer.java:1199)
+	at java.util.concurrent.locks.ReentrantLock$NonfairSync.lock(ReentrantLock.java:209)
+	at java.util.concurrent.locks.ReentrantLock.lock(ReentrantLock.java:285)
+	at lockvis.tools.DiningPhilosophers$Philosopher.eat(DiningPhilosophers.java:52)
+	at lockvis.tools.DiningPhilosophers$Philosopher.eat(DiningPhilosophers.java:43)
+	at lockvis.tools.DiningPhilosophers$Philosopher.run(DiningPhilosophers.java:70)
+	at java.lang.Thread.run(Thread.java:745)
+"Popper":
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x0000000783630710> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(AbstractQueuedSynchronizer.java:836)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireQueued(AbstractQueuedSynchronizer.java:870)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquire(AbstractQueuedSynchronizer.java:1199)
+	at java.util.concurrent.locks.ReentrantLock$NonfairSync.lock(ReentrantLock.java:209)
+	at java.util.concurrent.locks.ReentrantLock.lock(ReentrantLock.java:285)
+	at lockvis.tools.DiningPhilosophers$Philosopher.eat(DiningPhilosophers.java:52)
+	at lockvis.tools.DiningPhilosophers$Philosopher.eat(DiningPhilosophers.java:43)
+	at lockvis.tools.DiningPhilosophers$Philosopher.run(DiningPhilosophers.java:70)
+	at java.lang.Thread.run(Thread.java:745)
+"Descartes":
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x0000000783630918> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(AbstractQueuedSynchronizer.java:836)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireQueued(AbstractQueuedSynchronizer.java:870)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquire(AbstractQueuedSynchronizer.java:1199)
+	at java.util.concurrent.locks.ReentrantLock$NonfairSync.lock(ReentrantLock.java:209)
+	at java.util.concurrent.locks.ReentrantLock.lock(ReentrantLock.java:285)
+	at lockvis.tools.DiningPhilosophers$Philosopher.eat(DiningPhilosophers.java:52)
+	at lockvis.tools.DiningPhilosophers$Philosopher.eat(DiningPhilosophers.java:43)
+	at lockvis.tools.DiningPhilosophers$Philosopher.run(DiningPhilosophers.java:70)
+	at java.lang.Thread.run(Thread.java:745)
+
+Found 1 deadlock.
+

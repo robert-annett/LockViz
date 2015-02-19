@@ -1,0 +1,220 @@
+
+2012-01-16 14:07:06
+Full thread dump Java HotSpot(TM) Client VM (16.0-b13 mixed mode, sharing):
+
+"Popper" prio=6 tid=0x02b1d400 nid=0x1350 waiting for monitor entry [0x02eef000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at lockvis.DeadlockGenerator$Philosopher.eat(DeadlockGenerator.java:27)
+	- waiting to lock <0x22e60d70> (a lockvis.DeadlockGenerator$Chopstick)
+	- locked <0x22e60d78> (a lockvis.DeadlockGenerator$Chopstick)
+	at lockvis.DeadlockGenerator$2.run(DeadlockGenerator.java:51)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- None
+	
+"RMI TCP Connection(3)-1.1.1.1" daemon prio=6 tid=0x0318a000 nid=0x1538 runnable [0x034af000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:218)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:237)
+	- locked <0x229b2798> (a java.io.BufferedInputStream)
+	at java.io.FilterInputStream.read(FilterInputStream.java:66)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:517)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:790)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:649)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- <0x2299ede0> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"RMI TCP Connection(2)-1.1.1.1" daemon prio=6 tid=0x0318ac00 nid=0x12f8 in Object.wait() [0x0345e000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x22ea34d8> (a com.sun.jmx.remote.internal.ArrayNotificationBuffer)
+	at com.sun.jmx.remote.internal.ArrayNotificationBuffer.fetchNotifications(ArrayNotificationBuffer.java:417)
+	- locked <0x22ea34d8> (a com.sun.jmx.remote.internal.ArrayNotificationBuffer)
+	at com.sun.jmx.remote.internal.ArrayNotificationBuffer$ShareBuffer.fetchNotifications(ArrayNotificationBuffer.java:209)
+	at com.sun.jmx.remote.internal.ServerNotifForwarder.fetchNotifs(ServerNotifForwarder.java:258)
+	at javax.management.remote.rmi.RMIConnectionImpl$2.run(RMIConnectionImpl.java:1227)
+	at javax.management.remote.rmi.RMIConnectionImpl$2.run(RMIConnectionImpl.java:1225)
+	at javax.management.remote.rmi.RMIConnectionImpl.fetchNotifications(RMIConnectionImpl.java:1231)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:305)
+	at sun.rmi.transport.Transport$1.run(Transport.java:159)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:155)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:535)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:790)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:649)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- <0x2299e6e0> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"JMX server connection timeout 15" daemon prio=6 tid=0x03175400 nid=0xe90 in Object.wait() [0x0340f000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x22e60108> (a [I)
+	at com.sun.jmx.remote.internal.ServerCommunicatorAdmin$Timeout.run(ServerCommunicatorAdmin.java:150)
+	- locked <0x22e60108> (a [I)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI Scheduler(0)" daemon prio=6 tid=0x03173400 nid=0x118c waiting on condition [0x033bf000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x22e60198> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:198)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1963)
+	at java.util.concurrent.DelayQueue.take(DelayQueue.java:164)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:583)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:576)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI TCP Connection(1)-1.1.1.1" daemon prio=6 tid=0x03172400 nid=0x103c runnable [0x0336f000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:218)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:237)
+	- locked <0x22e60968> (a java.io.BufferedInputStream)
+	at java.io.FilterInputStream.read(FilterInputStream.java:66)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:517)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:790)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:649)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- <0x22e6e538> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"RMI TCP Accept-0" daemon prio=6 tid=0x030e3c00 nid=0x270 runnable [0x0331f000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:390)
+	- locked <0x22e60b60> (a java.net.SocksSocketImpl)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:453)
+	at java.net.ServerSocket.accept(ServerSocket.java:421)
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:34)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:369)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:341)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- None
+
+"DestroyJavaVM" prio=6 tid=0x003a7800 nid=0x1588 waiting on condition [0x00000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+
+"Descartes" prio=6 tid=0x02b1c800 nid=0xc4 waiting for monitor entry [0x02e9f000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at lockvis.DeadlockGenerator$Philosopher.eat(DeadlockGenerator.java:32)
+	- waiting to lock <0x22e60d78> (a lockvis.DeadlockGenerator$Chopstick)
+	- locked <0x22e60d70> (a lockvis.DeadlockGenerator$Chopstick)
+	at lockvis.DeadlockGenerator$1.run(DeadlockGenerator.java:46)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- None
+
+"Low Memory Detector" daemon prio=6 tid=0x02afec00 nid=0x1730 runnable [0x00000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"CompilerThread0" daemon prio=10 tid=0x02af8400 nid=0x164c waiting on condition [0x00000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Attach Listener" daemon prio=10 tid=0x02af6c00 nid=0x1574 runnable [0x00000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Signal Dispatcher" daemon prio=10 tid=0x02af5800 nid=0x858 runnable [0x00000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Finalizer" daemon prio=8 tid=0x02af1000 nid=0xbc4 in Object.wait() [0x02cbf000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x22e61030> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:118)
+	- locked <0x22e61030> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:134)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:159)
+
+   Locked ownable synchronizers:
+	- None
+
+"Reference Handler" daemon prio=10 tid=0x02aec400 nid=0x144c in Object.wait() [0x02c6f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x22e60480> (a java.lang.ref.Reference$Lock)
+	at java.lang.Object.wait(Object.java:485)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:116)
+	- locked <0x22e60480> (a java.lang.ref.Reference$Lock)
+
+   Locked ownable synchronizers:
+	- None
+
+"VM Thread" prio=10 tid=0x02aeac00 nid=0xebc runnable 
+
+"VM Periodic Task Thread" prio=10 tid=0x02b00c00 nid=0x10f8 waiting on condition 
+
+JNI global references: 824
+
+
+Found one Java-level deadlock:
+=============================
+"Popper":
+  waiting to lock monitor 0x02aef2cc (object 0x22e60d70, a lockvis.DeadlockGenerator$Chopstick),
+  which is held by "Descartes"
+"Descartes":
+  waiting to lock monitor 0x02aeff64 (object 0x22e60d78, a lockvis.DeadlockGenerator$Chopstick),
+  which is held by "Popper"
+
+Java stack information for the threads listed above:
+===================================================
+"Popper":
+	at lockvis.DeadlockGenerator$Philosopher.eat(DeadlockGenerator.java:27)
+	- waiting to lock <0x22e60d70> (a lockvis.DeadlockGenerator$Chopstick)
+	- locked <0x22e60d78> (a lockvis.DeadlockGenerator$Chopstick)
+	at lockvis.DeadlockGenerator$2.run(DeadlockGenerator.java:51)
+	at java.lang.Thread.run(Thread.java:619)
+"Descartes":
+	at lockvis.DeadlockGenerator$Philosopher.eat(DeadlockGenerator.java:32)
+	- waiting to lock <0x22e60d78> (a lockvis.DeadlockGenerator$Chopstick)
+	- locked <0x22e60d70> (a lockvis.DeadlockGenerator$Chopstick)
+	at lockvis.DeadlockGenerator$1.run(DeadlockGenerator.java:46)
+	at java.lang.Thread.run(Thread.java:619)
+
+Found 1 deadlock.
+

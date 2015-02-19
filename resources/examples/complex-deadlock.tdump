@@ -1,0 +1,1003 @@
+
+2011-12-07 11:32:22
+Full thread dump Java HotSpot(TM) Client VM (16.0-b13 mixed mode):
+
+"RMI TCP Connection(2725)-machine3" daemon prio=6 tid=0x1e94b400 nid=0x9a8 runnable [0x20f5f000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:218)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:237)
+	- locked <0x05e32098> (a java.io.BufferedInputStream)
+	at java.io.FilterInputStream.read(FilterInputStream.java:66)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:517)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:790)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:649)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- <0x05f58710> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"RMI TCP Connection(2724)-machine5" daemon prio=6 tid=0x1e606800 nid=0x19f0 runnable [0x20e3f000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:218)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:237)
+	- locked <0x12a7e508> (a java.io.BufferedInputStream)
+	at java.io.FilterInputStream.read(FilterInputStream.java:66)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:517)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:790)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:649)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- <0x12a7d9b0> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"RMI TCP Connection(2723)-machine3" daemon prio=6 tid=0x1e8da400 nid=0x91c runnable [0x2084f000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:218)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:237)
+	- locked <0x12a86260> (a java.io.BufferedInputStream)
+	at java.io.FilterInputStream.read(FilterInputStream.java:66)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:517)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:790)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:649)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- <0x12b93428> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"RMI TCP Connection(2722)-machine3" daemon prio=6 tid=0x1e8d5400 nid=0xd94 runnable [0x2057f000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:218)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:237)
+	- locked <0x12a884c8> (a java.io.BufferedInputStream)
+	at java.io.FilterInputStream.read(FilterInputStream.java:66)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:517)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:790)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:649)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- <0x12a8aae8> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"JMX server connection timeout 7994" daemon prio=6 tid=0x1e8da800 nid=0xb7c in Object.wait() [0x2018f000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x12a8ac18> (a [I)
+	at com.sun.jmx.remote.internal.ServerCommunicatorAdmin$Timeout.run(ServerCommunicatorAdmin.java:150)
+	- locked <0x12a8ac18> (a [I)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- None
+
+"JMX server connection timeout 7837" daemon prio=6 tid=0x1e7b1800 nid=0x1110 in Object.wait() [0x20d1f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x0708e900> (a [I)
+	at java.lang.Object.wait(Object.java:485)
+	at com.sun.jmx.remote.internal.ServerCommunicatorAdmin$Timeout.run(ServerCommunicatorAdmin.java:132)
+	- locked <0x0708e900> (a [I)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI TCP Connection(2704)-machine5" daemon prio=6 tid=0x1e7b0c00 nid=0x1b4c in Object.wait() [0x208df000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x06cbb628> (a com.sun.jmx.remote.internal.ArrayNotificationBuffer)
+	at com.sun.jmx.remote.internal.ArrayNotificationBuffer.fetchNotifications(ArrayNotificationBuffer.java:417)
+	- locked <0x06cbb628> (a com.sun.jmx.remote.internal.ArrayNotificationBuffer)
+	at com.sun.jmx.remote.internal.ArrayNotificationBuffer$ShareBuffer.fetchNotifications(ArrayNotificationBuffer.java:209)
+	at com.sun.jmx.remote.internal.ServerNotifForwarder.fetchNotifs(ServerNotifForwarder.java:258)
+	at javax.management.remote.rmi.RMIConnectionImpl$2.run(RMIConnectionImpl.java:1227)
+	at javax.management.remote.rmi.RMIConnectionImpl$2.run(RMIConnectionImpl.java:1225)
+	at javax.management.remote.rmi.RMIConnectionImpl.fetchNotifications(RMIConnectionImpl.java:1231)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:305)
+	at sun.rmi.transport.Transport$1.run(Transport.java:159)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:155)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:535)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:790)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:649)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- <0x1295c2a8> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"RMI TCP Connection(2720)-machine2" daemon prio=6 tid=0x1e8d9c00 nid=0xd4c runnable [0x1ff4f000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:218)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:237)
+	- locked <0x12a8d310> (a java.io.BufferedInputStream)
+	at java.io.FilterInputStream.read(FilterInputStream.java:66)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:517)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:790)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:649)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- <0x123678f0> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"RMI TCP Connection(2464)-machine3" daemon prio=6 tid=0x1e7b2400 nid=0x8c8 waiting for monitor entry [0x2033e000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at java.util.Hashtable.get(Hashtable.java:333)
+	- waiting to lock <0x06a76ec0> (a java.util.Hashtable)
+	at com.tango.ax.marketdata.server.service.MktDataServerWorker.isRunning(MktDataServerWorker.java:345)
+	at com.tango.ax.marketdata.server.service.MktDataServerWorker.subscribe(MktDataServerWorker.java:102)
+	at com.tango.ax.marketdata.server.service.MktDataServerImpl.subscribe(MktDataServerImpl.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:305)
+	at sun.rmi.transport.Transport$1.run(Transport.java:159)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:155)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:535)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:790)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:649)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- <0x0af05848> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"RMI TCP Connection(2315)-machine4" daemon prio=6 tid=0x1e8db000 nid=0xf68 waiting for monitor entry [0x20dae000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at java.util.Hashtable.get(Hashtable.java:333)
+	- waiting to lock <0x06a76ec0> (a java.util.Hashtable)
+	at com.tango.ax.marketdata.server.service.MktDataServerWorker.isRunning(MktDataServerWorker.java:345)
+	at com.tango.ax.marketdata.server.service.MktDataServerWorker.subscribe(MktDataServerWorker.java:102)
+	at com.tango.ax.marketdata.server.service.MktDataServerImpl.subscribe(MktDataServerImpl.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:305)
+	at sun.rmi.transport.Transport$1.run(Transport.java:159)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:155)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:535)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:790)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:649)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- <0x099c0878> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"RMI TCP Connection(2242)-machine4" daemon prio=6 tid=0x1e8d8000 nid=0xb4c waiting for monitor entry [0x2006e000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at com.reuters.sfc.realtime.RecordViewImpl.dropClient(RecordViewImpl.java:59)
+	- waiting to lock <0x0688b778> (a com.reuters.sfc.sass3.realtime.Sass3ProxyRTRecordService)
+	at tangox.ax.marketdata.AbstractRecordClient.removeRecord(AbstractRecordClient.java:498)
+	at tangox.ax.marketdata.AbstractRecordClient.unsubscribe(AbstractRecordClient.java:451)
+	at tangox.ax.marketdata.AbstractFeedHandler.unsubscribe(AbstractFeedHandler.java:111)
+	at com.tango.ax.risk.service.RTFeedImpl.removeQuote(RTFeedImpl.java:427)
+	at com.tango.ax.marketdata.server.MktDataPricingEnv.subscribeQuotesToFeed(MktDataPricingEnv.java:537)
+	- locked <0x06a7b320> (a com.tango.ax.risk.service.RTFeedImpl)
+	at com.tango.ax.marketdata.server.MktDataPricingEnv.unregister(MktDataPricingEnv.java:435)
+	- locked <0x06bb7c28> (a java.lang.Integer)
+	at com.tango.ax.marketdata.server.service.MktDataServerClientData.cleanUp(MktDataServerClientData.java:238)
+	at com.tango.ax.marketdata.server.service.MktDataServerWorker.unsubscribe(MktDataServerWorker.java:197)
+	- locked <0x068e7590> (a java.util.Hashtable)
+	at com.tango.ax.marketdata.server.service.MktDataServerImpl.unsubscribe(MktDataServerImpl.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:305)
+	at sun.rmi.transport.Transport$1.run(Transport.java:159)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:155)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:535)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:790)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:649)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- <0x074a0bd8> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"RMI RenewClean-[machine6:4022,com.tango.ax.service.profiler.ProfilerClientSocketFactory@39]" daemon prio=6 tid=0x1e8dbc00 nid=0x1550 in Object.wait() [0x20ecf000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x071e1d28> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:118)
+	- locked <0x071e1d28> (a java.lang.ref.ReferenceQueue$Lock)
+	at sun.rmi.transport.DGCClient$EndpointEntry$RenewCleanThread.run(DGCClient.java:516)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI TCP Connection(2721)-machine3" daemon prio=6 tid=0x1e8d6c00 nid=0x1438 in Object.wait() [0x1f37f000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x06cbb628> (a com.sun.jmx.remote.internal.ArrayNotificationBuffer)
+	at com.sun.jmx.remote.internal.ArrayNotificationBuffer.fetchNotifications(ArrayNotificationBuffer.java:417)
+	- locked <0x06cbb628> (a com.sun.jmx.remote.internal.ArrayNotificationBuffer)
+	at com.sun.jmx.remote.internal.ArrayNotificationBuffer$ShareBuffer.fetchNotifications(ArrayNotificationBuffer.java:209)
+	at com.sun.jmx.remote.internal.ServerNotifForwarder.fetchNotifs(ServerNotifForwarder.java:258)
+	at javax.management.remote.rmi.RMIConnectionImpl$2.run(RMIConnectionImpl.java:1227)
+	at javax.management.remote.rmi.RMIConnectionImpl$2.run(RMIConnectionImpl.java:1225)
+	at javax.management.remote.rmi.RMIConnectionImpl.fetchNotifications(RMIConnectionImpl.java:1231)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:305)
+	at sun.rmi.transport.Transport$1.run(Transport.java:159)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:155)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:535)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:790)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:649)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- <0x06ded980> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"ThreadPool-Socket[addr=machine1,port=4199,localport=56623]" daemon prio=6 tid=0x1e8d9000 nid=0x1178 waiting for monitor entry [0x20a8f000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at com.tango.ax.marketdata.server.MktDataPricingEnv.processMarketDataChange(MktDataPricingEnv.java:649)
+	- waiting to lock <0x06bb7c28> (a java.lang.Integer)
+	at com.tango.ax.marketdata.server.service.MktDataEventSubscriber.processMarketDataChange(MktDataEventSubscriber.java:213)
+	- locked <0x06bb79d0> (a java.util.Vector)
+	at com.tango.ax.marketdata.server.service.MktDataEventSubscriber.newEvent(MktDataEventSubscriber.java:150)
+	at com.tango.ax.event.PSConnectionImpl.newEvent(PSConnectionImpl.java:1107)
+	at com.tango.ax.event.PSConnectionImpl$ThreadHandler.run(PSConnectionImpl.java:1179)
+
+   Locked ownable synchronizers:
+	- None
+
+"ThreadReader-Socket[addr=machine1,port=4199,localport=56623]" daemon prio=6 tid=0x1e8d8c00 nid=0xf78 runnable [0x209ff000]
+   java.lang.Thread.State: RUNNABLE
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:25)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:233)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:200)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:236)
+	- locked <0x06bb3c58> (a java.lang.Object)
+	at com.tango.ax.util.AsyncUtil14.getShort(AsyncUtil14.java:238)
+	at com.tango.ax.event.PSConnection14.run(PSConnection14.java:322)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- None
+
+"Timer-0" daemon prio=6 tid=0x1e8d8400 nid=0x1bf0 in Object.wait() [0x2096f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x06bb7c78> (a java.util.TaskQueue)
+	at java.lang.Object.wait(Object.java:485)
+	at java.util.TimerThread.mainLoop(Timer.java:483)
+	- locked <0x06bb7c78> (a java.util.TaskQueue)
+	at java.util.TimerThread.run(Timer.java:462)
+
+   Locked ownable synchronizers:
+	- None
+
+"Thread-20" prio=6 tid=0x1e8d7800 nid=0x1758 runnable [0x00000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Thread-19" prio=6 tid=0x1e8d7400 nid=0xaf4 runnable [0x00000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"JSFC Event Thread 0" daemon prio=6 tid=0x1e8d6800 nid=0x10f4 waiting for monitor entry [0x204ef000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at com.tango.ax.marketdata.server.MktDataPricingEnv.newRate(MktDataPricingEnv.java:807)
+	- waiting to lock <0x06bb7c28> (a java.lang.Integer)
+	at com.tango.ax.risk.service.RTFeedImpl.newQuote(RTFeedImpl.java:473)
+	at com.tango.ax.marketdata.FeedHandler.callListeners(FeedHandler.java:249)
+	- locked <0x06a78790> (a java.util.Vector)
+	at tangox.ax.marketdata.AbstractRecordClient.processRecordSync(AbstractRecordClient.java:510)
+	at com.reuters.sfc.realtime.RecordImplCmd.execute(RecordImplCmd.java:18)
+	at com.reuters.utility.ClientNotifier.notifyClients(ClientNotifier.java:103)
+	- locked <0x078d2b00> (a com.reuters.utility.ClientNotifier)
+	at com.reuters.sfc.realtime.RecordImpl.indicateSync(RecordImpl.java:145)
+	- locked <0x07802728> (a com.reuters.sfc.realtime.RecordViewImpl)
+	at com.reuters.sfc.realtime.RecordViewImpl.indicateSync(RecordViewImpl.java:260)
+	at com.reuters.sfc.realtime.RecordViewImpl.indicateEvent(RecordViewImpl.java:338)
+	- locked <0x07802728> (a com.reuters.sfc.realtime.RecordViewImpl)
+	at com.reuters.sfc.realtime.RecordViewCmd.execute(RecordViewCmd.java:9)
+	at com.reuters.utility.ClientNotifier.notifyClients(ClientNotifier.java:103)
+	- locked <0x078d2bc0> (a com.reuters.utility.ClientNotifier)
+	at com.reuters.sfc.realtime.RTRecordImplEx.indicateViewSync(RTRecordImplEx.java:604)
+	at com.reuters.sfc.tib.realtime.TibRecord.viewSyncRecord(TibRecord.java:1073)
+	at com.reuters.sfc.tib.realtime.TibRecord.processItemImage(TibRecord.java:320)
+	at com.reuters.sfc.tib.realtime.TibRecord.processMessage(TibRecord.java:512)
+	at com.reuters.sfc.sass3.realtime.Sass3ProxyRTRecordService.processDataEvent(Sass3ProxyRTRecordService.java:421)
+	- locked <0x0688b778> (a com.reuters.sfc.sass3.realtime.Sass3ProxyRTRecordService)
+	at com.reuters.sfc.sass3.realtime.Sass3ProxyRTRecordService$Sass3RecordServiceEventCmd.run(Sass3ProxyRTRecordService.java:76)
+	at com.reuters.sfc.EventQueue.run(EventQueue.java:271)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- None
+
+"MktDataServerWorker.MKT-DATA-1 Server: MKT-DATA-1, PE: default_, cfg: MD-1, feed: Rmds MKT-DATA-1 1 1323216328947" daemon prio=6 tid=0x1e8d6000 nid=0xf74 waiting for monitor entry [0x2045f000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at java.util.Hashtable.size(Hashtable.java:206)
+	- waiting to lock <0x068e7590> (a java.util.Hashtable)
+	at com.tango.ax.marketdata.server.service.MktDataServerWorker.generate(MktDataServerWorker.java:488)
+	at com.tango.ax.marketdata.server.service.MktDataServerWorker.run(MktDataServerWorker.java:457)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- None
+
+"Thread-18" prio=6 tid=0x1e8d5c00 nid=0x970 runnable [0x203cf000]
+   java.lang.Thread.State: RUNNABLE
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:25)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:233)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:200)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:236)
+	- locked <0x06a32c08> (a java.lang.Object)
+	at com.tango.ax.util.AsyncUtil14.getShort(AsyncUtil14.java:238)
+	at com.tango.ax.marketdata.server.service.MktDataServerConnection.receive(MktDataServerConnection.java:220)
+	- locked <0x06a31658> (a com.tango.ax.marketdata.server.service.MktDataServerConnection)
+	at com.tango.ax.marketdata.server.service.MktDataServerConnection.run(MktDataServerConnection.java:113)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- None
+
+"DestroyJavaVM" prio=6 tid=0x1e8d5000 nid=0x468 waiting on condition [0x00000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"ThreadPool-Socket[addr=machine1,port=4199,localport=56602]" prio=6 tid=0x1e8d4800 nid=0x1024 in Object.wait() [0x202af000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x06a32d18> (a com.tango.ax.util.Semaphore)
+	at java.lang.Object.wait(Object.java:485)
+	at com.tango.ax.util.Semaphore.acquire(Semaphore.java:30)
+	- locked <0x06a32d18> (a com.tango.ax.util.Semaphore)
+	at com.tango.ax.util.Pool.get(Pool.java:53)
+	at com.tango.ax.event.PSConnectionImpl$ThreadHandler.run(PSConnectionImpl.java:1178)
+
+   Locked ownable synchronizers:
+	- None
+
+"ThreadReader-Socket[addr=machine1,port=4199,localport=56602]" prio=6 tid=0x1e8d4400 nid=0x858 runnable [0x2021f000]
+   java.lang.Thread.State: RUNNABLE
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:25)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:233)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:200)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:236)
+	- locked <0x06a32cb8> (a java.lang.Object)
+	at com.tango.ax.util.AsyncUtil14.getShort(AsyncUtil14.java:238)
+	at com.tango.ax.event.PSConnection14.run(PSConnection14.java:322)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI RenewClean-[machine6:4023,com.tango.ax.service.profiler.ProfilerClientSocketFactory@39]" daemon prio=6 tid=0x1e7b1c00 nid=0x158c in Object.wait() [0x200ff000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x06a32dc8> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:118)
+	- locked <0x06a32dc8> (a java.lang.ref.ReferenceQueue$Lock)
+	at sun.rmi.transport.DGCClient$EndpointEntry$RenewCleanThread.run(DGCClient.java:516)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI RenewClean-[machine3:56459]" daemon prio=6 tid=0x1e7b1000 nid=0x1b78 in Object.wait() [0x1ffdf000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x068fda40> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:118)
+	- locked <0x068fda40> (a java.lang.ref.ReferenceQueue$Lock)
+	at sun.rmi.transport.DGCClient$EndpointEntry$RenewCleanThread.run(DGCClient.java:516)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI Reaper" prio=6 tid=0x1e7b0400 nid=0xa04 in Object.wait() [0x1febf000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x066b1e68> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:118)
+	- locked <0x066b1e68> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:134)
+	at sun.rmi.transport.ObjectTable$Reaper.run(ObjectTable.java:333)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- None
+
+"Thread-14" prio=6 tid=0x1e7afc00 nid=0xe64 runnable [0x1fe2f000]
+   java.lang.Thread.State: RUNNABLE
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:273)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:255)
+	at sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:136)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:69)
+	- locked <0x068f9548> (a sun.nio.ch.Util$1)
+	- locked <0x068f9538> (a java.util.Collections$UnmodifiableSet)
+	- locked <0x0688d700> (a sun.nio.ch.WindowsSelectorImpl)
+	at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:80)
+	at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:84)
+	at com.tango.ax.util.net.ServerUtil.performSelect(ServerUtil.java:439)
+	at com.tango.ax.util.net.ServerUtil.dispatch(ServerUtil.java:405)
+	at com.tango.ax.util.net.ServerUtil$1.run(ServerUtil.java:200)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- None
+
+"Thread-13" prio=6 tid=0x1e7af800 nid=0x14b0 runnable [0x1fd9f000]
+   java.lang.Thread.State: RUNNABLE
+	at sun.nio.ch.ServerSocketChannelImpl.accept0(Native Method)
+	at sun.nio.ch.ServerSocketChannelImpl.accept(ServerSocketChannelImpl.java:145)
+	- locked <0x068f9468> (a java.lang.Object)
+	at com.tango.ax.util.net.ServerUtil.run(ServerUtil.java:265)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- None
+
+"ThreadPool0-7" prio=6 tid=0x1e7af000 nid=0x1788 waiting for monitor entry [0x1fd0f000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at com.tango.ax.marketdata.server.service.MktDataServerWorker.clientDisconnected(MktDataServerWorker.java:595)
+	- waiting to lock <0x06a76ec0> (a java.util.Hashtable)
+	at com.tango.ax.marketdata.server.service.MktDataServerImpl.clientDisconnected(MktDataServerImpl.java:386)
+	at com.tango.ax.marketdata.server.service.MktDataServerImpl.clientRemoved(MktDataServerImpl.java:382)
+	at com.tango.ax.util.net.ServerUtil.remove(ServerUtil.java:510)
+	at com.tango.ax.util.net.ChannelIO$ReadHandler.performOperation(ChannelIO.java:496)
+	at com.tango.ax.util.net.ChannelIO$Handler.run(ChannelIO.java:231)
+	at com.tango.ax.util.ThreadPool$PThread.run(ThreadPool.java:103)
+
+   Locked ownable synchronizers:
+	- None
+
+"ThreadPool0-6" prio=6 tid=0x1e7aec00 nid=0x1610 in Object.wait() [0x1fc7f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x068fd9b0> (a com.tango.ax.util.Semaphore)
+	at java.lang.Object.wait(Object.java:485)
+	at com.tango.ax.util.Semaphore.acquire(Semaphore.java:30)
+	- locked <0x068fd9b0> (a com.tango.ax.util.Semaphore)
+	at com.tango.ax.util.Pool.get(Pool.java:53)
+	at com.tango.ax.util.ThreadPool$PThread.run(ThreadPool.java:96)
+
+   Locked ownable synchronizers:
+	- None
+
+"ThreadPool0-5" prio=6 tid=0x1e60b800 nid=0xf04 in Object.wait() [0x1fbef000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x068fd9b0> (a com.tango.ax.util.Semaphore)
+	at java.lang.Object.wait(Object.java:485)
+	at com.tango.ax.util.Semaphore.acquire(Semaphore.java:30)
+	- locked <0x068fd9b0> (a com.tango.ax.util.Semaphore)
+	at com.tango.ax.util.Pool.get(Pool.java:53)
+	at com.tango.ax.util.ThreadPool$PThread.run(ThreadPool.java:96)
+
+   Locked ownable synchronizers:
+	- None
+
+"ThreadPool0-4" prio=6 tid=0x1e60b400 nid=0x1554 in Object.wait() [0x1fb5f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x068fd9b0> (a com.tango.ax.util.Semaphore)
+	at java.lang.Object.wait(Object.java:485)
+	at com.tango.ax.util.Semaphore.acquire(Semaphore.java:30)
+	- locked <0x068fd9b0> (a com.tango.ax.util.Semaphore)
+	at com.tango.ax.util.Pool.get(Pool.java:53)
+	at com.tango.ax.util.ThreadPool$PThread.run(ThreadPool.java:96)
+
+   Locked ownable synchronizers:
+	- None
+
+"ThreadPool0-3" prio=6 tid=0x1e60ac00 nid=0xbf4 in Object.wait() [0x1facf000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x068fd9b0> (a com.tango.ax.util.Semaphore)
+	at java.lang.Object.wait(Object.java:485)
+	at com.tango.ax.util.Semaphore.acquire(Semaphore.java:30)
+	- locked <0x068fd9b0> (a com.tango.ax.util.Semaphore)
+	at com.tango.ax.util.Pool.get(Pool.java:53)
+	at com.tango.ax.util.ThreadPool$PThread.run(ThreadPool.java:96)
+
+   Locked ownable synchronizers:
+	- None
+
+"ThreadPool0-2" prio=6 tid=0x1e60a800 nid=0x1b58 waiting for monitor entry [0x1fa3f000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at java.util.Hashtable.get(Hashtable.java:333)
+	- waiting to lock <0x068e7590> (a java.util.Hashtable)
+	at com.tango.ax.marketdata.server.service.MktDataServerWorker.clientHasBeenDisconnected(MktDataServerWorker.java:216)
+	- locked <0x06a76ec0> (a java.util.Hashtable)
+	at com.tango.ax.marketdata.server.service.MktDataServerWorker.clientDisconnected(MktDataServerWorker.java:598)
+	- locked <0x06a76ec0> (a java.util.Hashtable)
+	at com.tango.ax.marketdata.server.service.MktDataServerImpl.clientDisconnected(MktDataServerImpl.java:386)
+	at com.tango.ax.marketdata.server.service.MktDataServerImpl.clientRemoved(MktDataServerImpl.java:382)
+	at com.tango.ax.util.net.ServerUtil.remove(ServerUtil.java:510)
+	at com.tango.ax.util.net.ChannelIO$ReadHandler.performOperation(ChannelIO.java:496)
+	at com.tango.ax.util.net.ChannelIO$Handler.run(ChannelIO.java:231)
+	at com.tango.ax.util.ThreadPool$PThread.run(ThreadPool.java:103)
+
+   Locked ownable synchronizers:
+	- None
+
+"ThreadPool0-1" prio=6 tid=0x1e60a000 nid=0xa6c in Object.wait() [0x1f9af000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x068fd9b0> (a com.tango.ax.util.Semaphore)
+	at java.lang.Object.wait(Object.java:485)
+	at com.tango.ax.util.Semaphore.acquire(Semaphore.java:30)
+	- locked <0x068fd9b0> (a com.tango.ax.util.Semaphore)
+	at com.tango.ax.util.Pool.get(Pool.java:53)
+	at com.tango.ax.util.ThreadPool$PThread.run(ThreadPool.java:96)
+
+   Locked ownable synchronizers:
+	- None
+
+"ThreadPool0-0" prio=6 tid=0x1e609c00 nid=0x1730 in Object.wait() [0x1f91f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x068fd9b0> (a com.tango.ax.util.Semaphore)
+	at java.lang.Object.wait(Object.java:485)
+	at com.tango.ax.util.Semaphore.acquire(Semaphore.java:30)
+	- locked <0x068fd9b0> (a com.tango.ax.util.Semaphore)
+	at com.tango.ax.util.Pool.get(Pool.java:53)
+	at com.tango.ax.util.ThreadPool$PThread.run(ThreadPool.java:96)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI TCP Accept-9500" daemon prio=6 tid=0x1e609400 nid=0x22c runnable [0x1f88f000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:390)
+	- locked <0x0684b098> (a java.net.SocksSocketImpl)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:453)
+	at java.net.ServerSocket.accept(ServerSocket.java:421)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:369)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:341)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI RenewClean-[machine6:4020,com.tango.ax.service.profiler.ProfilerClientSocketFactory@39]" daemon prio=6 tid=0x1e609000 nid=0xbc4 in Object.wait() [0x1f7ff000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x06869e30> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:118)
+	- locked <0x06869e30> (a java.lang.ref.ReferenceQueue$Lock)
+	at sun.rmi.transport.DGCClient$EndpointEntry$RenewCleanThread.run(DGCClient.java:516)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- None
+
+"pool-2-thread-5" prio=6 tid=0x1e608800 nid=0x1314 waiting on condition [0x1f76f000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x06695488> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1925)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:358)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- None
+
+"AccessServerConnection14.KeepAlive" daemon prio=6 tid=0x1e608400 nid=0xfa0 waiting on condition [0x1f6df000]
+   java.lang.Thread.State: TIMED_WAITING (sleeping)
+	at java.lang.Thread.sleep(Native Method)
+	at com.tango.ax.service.AccessServerConnection$KeepAlive.run(AccessServerConnection.java:109)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- None
+
+"Thread-11" prio=6 tid=0x1e607c00 nid=0x410 runnable [0x1f64f000]
+   java.lang.Thread.State: RUNNABLE
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:25)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:233)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:200)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:236)
+	- locked <0x066b3ac0> (a java.lang.Object)
+	at com.tango.ax.util.AsyncUtil14.getShort(AsyncUtil14.java:238)
+	at com.tango.ax.service.AccessServerConnection14.receive(AccessServerConnection14.java:136)
+	- locked <0x066b3708> (a com.tango.ax.service.AccessServerConnection14)
+	at com.tango.ax.service.AccessServerConnection.run(AccessServerConnection.java:136)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- None
+
+"GC Daemon" daemon prio=2 tid=0x1e607800 nid=0x11b4 in Object.wait() [0x1f5bf000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x06644be8> (a sun.misc.GC$LatencyLock)
+	at sun.misc.GC$Daemon.run(GC.java:100)
+	- locked <0x06644be8> (a sun.misc.GC$LatencyLock)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI RenewClean-[machine6:4032,com.tango.ax.service.profiler.ProfilerClientSocketFactory@39]" daemon prio=6 tid=0x1e607000 nid=0x1ab8 in Object.wait() [0x1f52f000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x06644c60> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:118)
+	- locked <0x06644c60> (a java.lang.ref.ReferenceQueue$Lock)
+	at sun.rmi.transport.DGCClient$EndpointEntry$RenewCleanThread.run(DGCClient.java:516)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI TCP Connection(1)-machine2" daemon prio=6 tid=0x1e606400 nid=0x810 runnable [0x1f2ef000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:129)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:218)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:237)
+	- locked <0x06692ed8> (a java.io.BufferedInputStream)
+	at java.io.FilterInputStream.read(FilterInputStream.java:66)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:517)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:790)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:649)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- <0x06690e88> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"pool-2-thread-4" prio=6 tid=0x1e605c00 nid=0xa38 waiting on condition [0x1f25f000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x06695488> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1925)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:358)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI Scheduler(0)" daemon prio=6 tid=0x1e605000 nid=0xee8 waiting on condition [0x1f1cf000]
+   java.lang.Thread.State: TIMED_WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x066b1130> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:198)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1963)
+	at java.util.concurrent.DelayQueue.take(DelayQueue.java:164)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:583)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:576)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- None
+
+"pool-2-thread-3" prio=6 tid=0x1e604c00 nid=0x1364 waiting on condition [0x1f13f000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x06695488> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1925)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:358)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- None
+
+"pool-2-thread-2" prio=6 tid=0x1e604400 nid=0xf34 waiting on condition [0x1f49f000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x06695488> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1925)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:358)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- None
+
+"pool-2-thread-1" prio=6 tid=0x1e604000 nid=0xd98 waiting on condition [0x1f40f000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x06695488> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1925)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:358)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:947)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:907)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- None
+
+"pool-3-thread-1" prio=6 tid=0x1d926400 nid=0x1bb0 waiting on condition [0x1f0af000]
+   java.lang.Thread.State: WAITING (parking)
+	at sun.misc.Unsafe.park(Native Method)
+	- parking to wait for  <0x06695c68> (a java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject)
+	at java.util.concurrent.locks.LockSupport.park(LockSupport.java:158)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1925)
+	at java.util.concurrent.PriorityBlockingQueue.take(PriorityBlockingQueue.java:220)
+	at jmxlogger.tools.JmxLogService$3.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- <0x06695d58> (a java.util.concurrent.locks.ReentrantLock$NonfairSync)
+
+"RMI TCP Accept-0" daemon prio=6 tid=0x1e5f9000 nid=0x1540 runnable [0x1e15f000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:390)
+	- locked <0x066b22c0> (a java.net.SocksSocketImpl)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:453)
+	at java.net.ServerSocket.accept(ServerSocket.java:421)
+	at sun.management.jmxremote.LocalRMIServerSocketFactory$1.accept(LocalRMIServerSocketFactory.java:34)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:369)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:341)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI TCP Accept-5010" daemon prio=6 tid=0x1e5f8000 nid=0x14b8 runnable [0x1e06f000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:390)
+	- locked <0x066454d0> (a java.net.SocksSocketImpl)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:453)
+	at java.net.ServerSocket.accept(ServerSocket.java:421)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:369)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:341)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- None
+
+"RMI TCP Accept-0" daemon prio=6 tid=0x1e5ad800 nid=0x12f4 runnable [0x1df9f000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:390)
+	- locked <0x06644e90> (a java.net.SocksSocketImpl)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:453)
+	at java.net.ServerSocket.accept(ServerSocket.java:421)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.executeAcceptLoop(TCPTransport.java:369)
+	at sun.rmi.transport.tcp.TCPTransport$AcceptLoop.run(TCPTransport.java:341)
+	at java.lang.Thread.run(Thread.java:619)
+
+   Locked ownable synchronizers:
+	- None
+
+"Low Memory Detector" daemon prio=6 tid=0x1d7c2400 nid=0xca4 runnable [0x00000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"CompilerThread0" daemon prio=10 tid=0x1d7be000 nid=0x137c waiting on condition [0x00000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Attach Listener" daemon prio=10 tid=0x1d7bb400 nid=0x77c waiting on condition [0x00000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Signal Dispatcher" daemon prio=10 tid=0x1d7b2800 nid=0x117c runnable [0x00000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Surrogate Locker Thread (CMS)" daemon prio=6 tid=0x1d7b1800 nid=0x8b4 waiting on condition [0x00000000]
+   java.lang.Thread.State: RUNNABLE
+
+   Locked ownable synchronizers:
+	- None
+
+"Finalizer" daemon prio=8 tid=0x1d784000 nid=0xf90 in Object.wait() [0x1db1f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x066b2a70> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:118)
+	- locked <0x066b2a70> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:134)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:159)
+
+   Locked ownable synchronizers:
+	- None
+
+"Reference Handler" daemon prio=10 tid=0x1d77fc00 nid=0x1adc in Object.wait() [0x1da8f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x066b2018> (a java.lang.ref.Reference$Lock)
+	at java.lang.Object.wait(Object.java:485)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:116)
+	- locked <0x066b2018> (a java.lang.ref.Reference$Lock)
+
+   Locked ownable synchronizers:
+	- None
+
+"VM Thread" prio=10 tid=0x1d779400 nid=0xdc4 runnable 
+
+"Gang worker#0 (Parallel GC Threads)" prio=10 tid=0x02475800 nid=0x6cc runnable 
+
+"Gang worker#1 (Parallel GC Threads)" prio=10 tid=0x02473c00 nid=0x1d0 runnable 
+
+"Concurrent Mark-Sweep GC Thread" prio=10 tid=0x024e3000 nid=0x114c runnable 
+"VM Periodic Task Thread" prio=10 tid=0x1e5fdc00 nid=0x1284 waiting on condition 
+
+JNI global references: 1059
+
+
+Found one Java-level deadlock:
+=============================
+"RMI TCP Connection(2464)-machine3":
+  waiting to lock monitor 0x1e9576f4 (object 0x06a76ec0, a java.util.Hashtable),
+  which is held by "ThreadPool0-2"
+"ThreadPool0-2":
+  waiting to lock monitor 0x1e9ed22c (object 0x068e7590, a java.util.Hashtable),
+  which is held by "RMI TCP Connection(2242)-machine4"
+"RMI TCP Connection(2242)-machine4":
+  waiting to lock monitor 0x1e22045c (object 0x0688b778, a com.reuters.sfc.sass3.realtime.Sass3ProxyRTRecordService),
+  which is held by "JSFC Event Thread 0"
+"JSFC Event Thread 0":
+  waiting to lock monitor 0x1d7cc944 (object 0x06bb7c28, a java.lang.Integer),
+  which is held by "RMI TCP Connection(2242)-machine4"
+
+Java stack information for the threads listed above:
+===================================================
+"RMI TCP Connection(2464)-machine3":
+	at java.util.Hashtable.get(Hashtable.java:333)
+	- waiting to lock <0x06a76ec0> (a java.util.Hashtable)
+	at com.tango.ax.marketdata.server.service.MktDataServerWorker.isRunning(MktDataServerWorker.java:345)
+	at com.tango.ax.marketdata.server.service.MktDataServerWorker.subscribe(MktDataServerWorker.java:102)
+	at com.tango.ax.marketdata.server.service.MktDataServerImpl.subscribe(MktDataServerImpl.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:305)
+	at sun.rmi.transport.Transport$1.run(Transport.java:159)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:155)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:535)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:790)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:649)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+"ThreadPool0-2":
+	at java.util.Hashtable.get(Hashtable.java:333)
+	- waiting to lock <0x068e7590> (a java.util.Hashtable)
+	at com.tango.ax.marketdata.server.service.MktDataServerWorker.clientHasBeenDisconnected(MktDataServerWorker.java:216)
+	- locked <0x06a76ec0> (a java.util.Hashtable)
+	at com.tango.ax.marketdata.server.service.MktDataServerWorker.clientDisconnected(MktDataServerWorker.java:598)
+	- locked <0x06a76ec0> (a java.util.Hashtable)
+	at com.tango.ax.marketdata.server.service.MktDataServerImpl.clientDisconnected(MktDataServerImpl.java:386)
+	at com.tango.ax.marketdata.server.service.MktDataServerImpl.clientRemoved(MktDataServerImpl.java:382)
+	at com.tango.ax.util.net.ServerUtil.remove(ServerUtil.java:510)
+	at com.tango.ax.util.net.ChannelIO$ReadHandler.performOperation(ChannelIO.java:496)
+	at com.tango.ax.util.net.ChannelIO$Handler.run(ChannelIO.java:231)
+	at com.tango.ax.util.ThreadPool$PThread.run(ThreadPool.java:103)
+"RMI TCP Connection(2242)-machine4":
+	at com.reuters.sfc.realtime.RecordViewImpl.dropClient(RecordViewImpl.java:59)
+	- waiting to lock <0x0688b778> (a com.reuters.sfc.sass3.realtime.Sass3ProxyRTRecordService)
+	at tangox.ax.marketdata.AbstractRecordClient.removeRecord(AbstractRecordClient.java:498)
+	at tangox.ax.marketdata.AbstractRecordClient.unsubscribe(AbstractRecordClient.java:451)
+	at tangox.ax.marketdata.AbstractFeedHandler.unsubscribe(AbstractFeedHandler.java:111)
+	at com.tango.ax.risk.service.RTFeedImpl.removeQuote(RTFeedImpl.java:427)
+	at com.tango.ax.marketdata.server.MktDataPricingEnv.subscribeQuotesToFeed(MktDataPricingEnv.java:537)
+	- locked <0x06a7b320> (a com.tango.ax.risk.service.RTFeedImpl)
+	at com.tango.ax.marketdata.server.MktDataPricingEnv.unregister(MktDataPricingEnv.java:435)
+	- locked <0x06bb7c28> (a java.lang.Integer)
+	at com.tango.ax.marketdata.server.service.MktDataServerClientData.cleanUp(MktDataServerClientData.java:238)
+	at com.tango.ax.marketdata.server.service.MktDataServerWorker.unsubscribe(MktDataServerWorker.java:197)
+	- locked <0x068e7590> (a java.util.Hashtable)
+	at com.tango.ax.marketdata.server.service.MktDataServerImpl.unsubscribe(MktDataServerImpl.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:305)
+	at sun.rmi.transport.Transport$1.run(Transport.java:159)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:155)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:535)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:790)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:649)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+"JSFC Event Thread 0":
+	at com.tango.ax.marketdata.server.MktDataPricingEnv.newRate(MktDataPricingEnv.java:807)
+	- waiting to lock <0x06bb7c28> (a java.lang.Integer)
+	at com.tango.ax.risk.service.RTFeedImpl.newQuote(RTFeedImpl.java:473)
+	at com.tango.ax.marketdata.FeedHandler.callListeners(FeedHandler.java:249)
+	- locked <0x06a78790> (a java.util.Vector)
+	at tangox.ax.marketdata.AbstractRecordClient.processRecordSync(AbstractRecordClient.java:510)
+	at com.reuters.sfc.realtime.RecordImplCmd.execute(RecordImplCmd.java:18)
+	at com.reuters.utility.ClientNotifier.notifyClients(ClientNotifier.java:103)
+	- locked <0x078d2b00> (a com.reuters.utility.ClientNotifier)
+	at com.reuters.sfc.realtime.RecordImpl.indicateSync(RecordImpl.java:145)
+	- locked <0x07802728> (a com.reuters.sfc.realtime.RecordViewImpl)
+	at com.reuters.sfc.realtime.RecordViewImpl.indicateSync(RecordViewImpl.java:260)
+	at com.reuters.sfc.realtime.RecordViewImpl.indicateEvent(RecordViewImpl.java:338)
+	- locked <0x07802728> (a com.reuters.sfc.realtime.RecordViewImpl)
+	at com.reuters.sfc.realtime.RecordViewCmd.execute(RecordViewCmd.java:9)
+	at com.reuters.utility.ClientNotifier.notifyClients(ClientNotifier.java:103)
+	- locked <0x078d2bc0> (a com.reuters.utility.ClientNotifier)
+	at com.reuters.sfc.realtime.RTRecordImplEx.indicateViewSync(RTRecordImplEx.java:604)
+	at com.reuters.sfc.tib.realtime.TibRecord.viewSyncRecord(TibRecord.java:1073)
+	at com.reuters.sfc.tib.realtime.TibRecord.processItemImage(TibRecord.java:320)
+	at com.reuters.sfc.tib.realtime.TibRecord.processMessage(TibRecord.java:512)
+	at com.reuters.sfc.sass3.realtime.Sass3ProxyRTRecordService.processDataEvent(Sass3ProxyRTRecordService.java:421)
+	- locked <0x0688b778> (a com.reuters.sfc.sass3.realtime.Sass3ProxyRTRecordService)
+	at com.reuters.sfc.sass3.realtime.Sass3ProxyRTRecordService$Sass3RecordServiceEventCmd.run(Sass3ProxyRTRecordService.java:76)
+	at com.reuters.sfc.EventQueue.run(EventQueue.java:271)
+	at java.lang.Thread.run(Thread.java:619)
+
+Found 1 deadlock.
+

@@ -1,2 +1,2 @@
 # LockViz
-Project for visualising java thread dumps
+Project for visualising java thread dumps.
